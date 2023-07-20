@@ -1,6 +1,7 @@
 .swiperArea{
     position: relative;
     height: auto;
+    overflow: hidden;
     .swiper-container{
         @include mq(tb){
             padding: 0 40px;
@@ -8,13 +9,16 @@
         &.card-swiper{// カードレイアウト
             margin-bottom: 80px;
             &:last-child{
-                margin-bottom: 80px;
+                margin-bottom: 30px;
+                @include mq(tb){
+                    margin-bottom: 80px;
+                }
             }
 
-            &.-sliderItem02{//画像の大きさで変えること
+            &.-sliderItem01{//画像の大きさで変えること
                 .swiper-button-next,
                 .swiper-button-prev {
-                    bottom: -4.5vh;
+
                     width: 45px; /* 背景画像の幅を必ず指定 */
                     height: 45px; /* 背景画像の高さを必ず指定 */
                     transform: translateY(-50%);
@@ -25,11 +29,12 @@
                     transition: all .5s;
                     z-index: 6 !important;
                     @include mq(sp){
-                        top: auto !important;
-                        transform: scale(.5, .5);
+                        top: 50%;
+                        transform: scale(.5, .5) translateY(-50%);
                     }
                     @include mq(tb){
-                        top: 65%;
+                        top: 50%;
+                        transform: translateY(-50%);
                     }
                     &::after {
                         position: absolute;
@@ -46,7 +51,7 @@
                 }
                 .swiper-button-prev {
                     @include mq(sp){
-                        left: 19px;
+                        left: -10px;
                     }
                     &::after {
                         border-width: 11px 14px 11px 0;
@@ -56,7 +61,7 @@
                   }
                 .swiper-button-next {
                     @include mq(sp){
-                        right: 19px;
+                        right: -10px;
                     }
                     &::after {
                       border-width: 11px 0 11px 14px;
@@ -67,19 +72,25 @@
             }
         }
         .swiper-pagination {//ページネーションの位置
-            bottom: -3.5vh;
+            bottom: 4.5%;
             z-index: 5 !important;
+
             @include mq(tb){
-                bottom: -30px;
+                bottom: 7%;
             }
+
             .swiper-pagination-bullet-active{//現在地表示に関しての記述
-                background: $swiper-active;
+                background: $site-color01;
             }
             .swiper-pagination-bullet{//ドットの大きさに関する記述
+                transition: .5s all;
                 @include mq(tb){
                     width: .8vw;
                     height: .8vw;
                     margin: 0 .8vw;
+                }
+                &:hover{
+                    background: $site-color01-hover;
                 }
             }
         }
@@ -144,10 +155,13 @@
     }
 }
 .card-L{
-    width: 95%;
-    max-width: 1260px;
+    width: 85%;
     height: auto;
     margin: auto;
+    @include mq(tb){
+        width: 95%;
+        max-width: 1260px;
+    }
     img{
         width: 100%;
         height: auto;
@@ -168,4 +182,5 @@
  {
   opacity: 1;
 }
+
 

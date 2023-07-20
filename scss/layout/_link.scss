@@ -31,6 +31,20 @@
 			}
 		}
 	}
+    &.-p03{
+        display: block;
+        transform: scale(1);
+        transition-duration: 0.5s;
+        overflow: hidden;
+        @include mq(tb){
+            transition: all 0.5s ease-in-out;
+            &:hover{
+                transform: scale(.95);
+                transition-duration: 0.2s;
+                // box-shadow: 1px 1px 4px 0px $item-hover--bg;
+            }
+        }
+    }
     &.-tokusetsu{//----- 押し込む -----
 		@media screen and (min-width: 767px){
             position: relative;

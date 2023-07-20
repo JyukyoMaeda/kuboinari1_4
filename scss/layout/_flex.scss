@@ -2,6 +2,65 @@
 .l-flex--area{
 	height: 100%;
 	.l-flex--contents{
+		.flexItem{
+			&.-noPD{
+				padding: 0 !important;
+			}
+			&.-noPD_r{
+				padding-right: 0 !important;
+			}
+			&.-noPD_l{
+				padding-left: 0 !important;
+			}
+			// pcのみ
+			&.-noPD_pc{
+				@include mq(tb){
+					padding: 0 !important;
+				}
+			}
+			&.-noPD_r_pc{
+				@include mq(tb){
+					padding-right: 0 !important;
+				}
+			}
+			&.-noPD_l_pc{
+				@include mq(tb){
+					padding-left: 0 !important;
+				}
+			}
+			// spのみ
+			&.-noPD_s{
+				@include mq(sp){
+					padding: 0 !important;
+				}
+			}
+			&.-noPD_r_s{
+				@include mq(sp){
+					padding-right: 0 !important;
+				}
+			}
+			&.-noPD_l_s{
+				@include mq(sp){
+					padding-left: 0 !important;
+				}
+			}
+			&.-youtubeBox{
+				padding: 0 5vw;
+				@include mq(tb){
+					padding: 0 1.5vw;
+				}
+				&.-left{
+					@include mq(tb){
+						padding: 0 1.5vw 0 0;
+					}
+				}
+				&.-right{
+					@include mq(tb){
+						padding: 0 0 0 1.5vw;
+					}
+				}
+			}
+		}
 		&.-p01{//左右均等パターン
 			width: 100%;
 			height: 100%;
@@ -177,7 +236,7 @@
 				}
 			}
 		}
-				&.-contact-box{
+		&.-contact-box{
 			display: flex;
 			flex-wrap: wrap;
 			width: 100%;
@@ -212,6 +271,50 @@
 				&:nth-child(4){
 					.l-linkImg{
 						background: $contact-item-4;
+					}
+				}
+			}
+		}
+
+		// リニューアル追加分
+		&.-columnBox{
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			@include mq(tb){
+				flex-wrap: nowrap;
+				align-items: flex-start;
+				justify-content: space-around;
+			}
+			.flexItem{
+				width: 100%;
+				padding: 0 5%;
+				@include mq(tb){
+					width: 50%;
+					padding: 0 2%;
+				}
+			}
+			&.-w_7-3{
+				@include mq(tb){
+					.flexItem{
+						&.-textArea{
+							width: 70%;
+						}
+						&.-picArea{
+							width: 30%;
+						}
+					}
+				}
+			}
+		}
+		&.-setsubi-title{
+			.flexItem{
+				&.-title{
+					img{
+						width: 35%;
+						@include mq(tb){
+							width: 50%;
+						}
 					}
 				}
 			}

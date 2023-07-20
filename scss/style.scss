@@ -21,8 +21,8 @@
 @import "./layout/link";
 @import "./layout/slick";
 @import "./layout/danran";
-@import "./layout/colorbox";
 @import "./layout/tab";
+@import "./layout/text";
 @import "./layout/youtube";
 
 // 自作
@@ -38,15 +38,10 @@
 @import "./introduction/colorBox";
 @import "./introduction/slick-theme";
 @import "./introduction/slick";
+@import "./introduction/aos";
 @import "./introduction/swiper";
 @import "./introduction/menu";
+@import "./introduction/pageTop";
 
-// アニメーション
-@import "./animetion/body";
-@import "./animetion/fristView";
-@import "./animetion/top";
-@import "./animetion/playArea";
-@import "./animetion/gridContents";
-@import "./animetion/flexContents";
-@import "./animetion/bundle";
-
+// ページごとのレイアウト
+@import "./page/setsubi";

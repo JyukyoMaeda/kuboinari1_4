@@ -18,11 +18,10 @@
 
     <script src="js/jquery-3.6.3.min.js"></script>
     <script src="js/query.colorbox-min.js"></script>
-    <script src="js/slick.min.js"></script> 
+    <script src="js/slick.min.js"></script>
 
     <script src="js/menu.js"></script>
-    <script src="js/pagetop.js"></script> 
-    <!-- <script src="js/main.js"></script>  -->
+    <script src="js/pagetop.js"></script>
 
     <!-- swiper関係 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
@@ -33,503 +32,375 @@
     <!-- Global site tag (gtag.js) - Google Analytics --> 
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-48905020-1"></script> 
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-    gtag('config', 'UA-48905020-1');
-    </script> 
+        gtag('config', 'UA-48905020-1');
+    </script>
     <script type="text/javascript">
-    if(location.protocol == 'http:') {
-    location.replace(location.href.replace(/http:/, 'https:'));
-    }
+        if(location.protocol == 'http:') {
+        location.replace(location.href.replace(/http:/, 'https:'));
+        }
+    </script>
+
+    <!-- Adobi Font -->
+    <script>
+        (function(d) {
+            var config = {
+            // kitId: 'mvu7twk',
+            kitId: 'xix3mpj',
+            scriptTimeout: 3000,
+            async: true
+            },
+            h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        })(document);
     </script>
 
 </head>
-<body class="js_humburgerClose">
+<body id="p-setsubi" class="js_humburgerClose">
+
     <div id="all">
-        <!-- ナビゲーション -->
-        <div class="menu_box">
-            <div class="el_humburger"> 
-                    <!--ハンバーガーボタン-->
-                    <div class="el_humburger_wrapper">
-                        <span class="el_humburger_bar top"></span>
-                        <span class="el_humburger_bar middle"></span>
-                        <span class="el_humburger_bar bottom"></span>
-                    </div>
-            </div>
-            <div class="circle"></div>
-            <div class="navi">
-                    <!--ナビゲーション-->
-                    <div class="navi_inner">
-                            <div class="navi_item"><a href="index.html">トップ</a></div>
-                            <div class="navi_item"><a href="index.html#content1">区画図</a></div>
-                            <div class="navi_item"><a href="index.html#content2">セミオーダー住宅</a></div>
-                            <div class="navi_item"><a href="index.html#content3">ロケーション</a></div>
-                            <div class="navi_item"><a href="index.html#content4">アクセス</a></div>
-                            <div class="navi_item"><a href="index.html#content5">子育て支援</a></div>
-                    </div>/
-                    <ul class="btnArea">
-                            <li><a href="https://www.jyu-g.co.jp/contents/tour?checkid=712701337">見学予約</a></li>
-                            <li><a href="https://www.jyu-g.co.jp/contents/inquiry?checkid=712701337">お問い合わせ</a></li>
-                            <li><a href="https://www.jyu-g.co.jp/contents/regist?form_mode=1">無料会員登録</a></li>
-                            <li><a href="https://www.jyu-g.co.jp/">ホーム</a></li>
-                    </ul>
-            </div>
-            <ul class="navi2">
-                    <li><a href="https://www.jyu-g.co.jp/contents/tour?checkid=712701337">見学予約</a></li>
-                    <li><a href="https://www.jyu-g.co.jp/contents/inquiry?checkid=712701337">資料請求</a></li>
-                    <li><a href="https://www.jyu-g.co.jp/contents/regist?form_mode=1">会員登録</a></li>
-                    <li><a href="https://www.jyu-g.co.jp">ホーム</a></li>
-            </ul>
-        </div>
-        <div class="l-container -setsubi-page">
-                            <!-- 設備をみる　スライダーコンテンツ -->
-                            <img class="pc" src="images/EQUIPMENT_title.jpg" alt="EQUIPMENT">
-                            <img class="sp" src="images/EQUIPMENT_title_s.jpg" alt="EQUIPMENT">
-                            <div class="l-contents -slider l-mgt-3">
-                                <div class="l-contens--wrapper">
-                                        <div class="pc">
-                                            <div class="option-contents">
-                                                <!-- 1.システムキッチン -->
-                                                <div class="swiper-title">
-                                                    <img src="images/kitchen_title.jpg" alt="システムキッチン 選べる3メーカー">
-                                                </div>
-                                                <div class="swiperArea">
-                                                    <div class="swiper-container card-swiper -sliderItem02">
-                                                        <div class="swiper-wrapper">
-                                                            <!-- Slides -->
-                                                            <div class="swiper-slide">
-                                                                <div class="card-L">
-                                                                    <img src="images/kitchen_1.png" alt="汚れに強く傷みにくい、美しさをいつまでも保つ気持ちのいいキッチン。">
-                                                                </div>
-                                                            </div>
-                                                            <div class="swiper-slide">
-                                                                <div class="card-L">
-                                                                    <img src="images/kitchen_2.png" alt="シンプルだからこそ使いやすい。料理をつくる時間、家族と過ごす時間を大切にするキッチン。">
-                                                                </div>
-                                                            </div>
-                                                            <div class="swiper-slide">
-                                                                <div class="card-L">
-                                                                    <img src="images/kitchen_3.png" alt="暮らしの中で輝き続けるキッチン。積み重ねてきた不変のこだわり。">
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="swiper-button-prev"></div>
-                                                        <div class="swiper-button-next"></div>
-                                                        <!-- ページネーション（※省略可） -->
-                                                        <div class="swiper-pagination"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="border-bottom"></div>
-            
-                                                <!-- 2.バスルーム -->
-                                                <div class="swiper-title">
-                                                    <img src="images/bathroom_title.jpg" alt="バスルーム 選べる2メーカー">
-                                                </div>
-                                                <div class="swiperArea">
-                                                    <div class="swiper-container card-swiper -sliderItem02">
-                                                        <div class="swiper-wrapper">
-                                                            <!-- Slides -->
-                                                            <div class="swiper-slide">
-                                                                <div class="card-L">
-                                                                    <img src="images/bathroom_1.png" alt="汚れに強く傷みにくい、美しさをいつまでも保つ気持ちのいいキッチン。">
-                                                                </div>
-                                                            </div>
-                                                            <div class="swiper-slide">
-                                                                <div class="card-L">
-                                                                    <img src="images/bathroom_2.png" alt="シンプルだからこそ使いやすい。料理をつくる時間、家族と過ごす時間を大切にするキッチン。">
-                                                                </div>
-                                                            </div>
-            
-                                                        </div>
-                                                        <div class="swiper-button-prev"></div>
-                                                        <div class="swiper-button-next"></div>
-                                                        <!-- ページネーション（※省略可） -->
-                                                        <div class="swiper-pagination"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="border-bottom"></div>
-            
-                                                <!-- 3.洗面化粧台 -->
-                                                <div class="washatendArea card-L">
-                                                    <img src="images/washstand_1.png" alt="洗面化粧台 もっと美しく。もっと使いやすく。使う人のための工夫が満載の洗面化粧台。">
-                                                </div>
-                                                <div class="border-bottom"></div>
-            
-                                                <!-- 4.トイレ -->
-                                                <div class="swiper-title">
-                                                    <img src="images/toilet_title.jpg" alt="トイレ 大きな手洗いボウルと新フチなし形状で、より使いやすく清潔なトイレ空間に。">
-                                                </div>
-                                                <div class="swiperArea">
-                                                    <div class="swiper-container card-swiper -sliderItem02">
-                                                        <div class="swiper-wrapper">
-                                                            <!-- Slides -->
-                                                            <div class="swiper-slide">
-                                                                <div class="card-L">
-                                                                    <img src="images/toilet_1.png" alt="">
-                                                                </div>
-                                                            </div>
-                                                            <div class="swiper-slide">
-                                                                <div class="card-L">
-                                                                    <img src="images/toilet_2.png" alt="">
-                                                                </div>
-                                                            </div>
-            
-                                                        </div>
-                                                        <div class="swiper-button-prev"></div>
-                                                        <div class="swiper-button-next"></div>
-                                                        <!-- ページネーション（※省略可） -->
-                                                        <div class="swiper-pagination"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="border-bottom"></div>
-            
-                                                <!-- 5.フローリング -->
-                                                <div class="swiper-title">
-                                                    <img src="images/flooring_title.jpg" alt="フローリング デザイン性に優れた6種類のラインナップ。キャスターや落下物による傷に強く、床暖房にも対応しています。">
-                                                </div>
-                                                <div class="swiperArea">
-                                                    <div class="swiper-container card-swiper -sliderItem02">
-                                                        <div class="swiper-wrapper">
-                                                            <!-- Slides -->
-                                                            <div class="swiper-slide">
-                                                                <div class="card-L">
-                                                                    <img src="images/flooring_1.png" alt="">
-                                                                </div>
-                                                            </div>
-                                                            <div class="swiper-slide">
-                                                                <div class="card-L">
-                                                                    <img src="images/flooring_2.png" alt="">
-                                                                </div>
-                                                            </div>
-            
-                                                        </div>
-                                                        <div class="swiper-button-prev"></div>
-                                                        <div class="swiper-button-next"></div>
-                                                        <!-- ページネーション（※省略可） -->
-                                                        <div class="swiper-pagination"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="border-bottom "></div>
-            
-                                                <!-- 6.耐熱ドア -->
-                                                <div class="swiper-title">
-                                                    <img src="images/door_title.jpg" alt="フローリング デザイン性に優れた6種類のラインナップ。キャスターや落下物による傷に強く、床暖房にも対応しています。">
-                                                </div>
-                                                <div class="swiperArea">
-                                                    <div class="swiper-container card-swiper -sliderItem02">
-                                                        <div class="swiper-wrapper">
-                                                            <!-- Slides -->
-                                                            <div class="swiper-slide">
-                                                                <div class="card-L">
-                                                                    <img src="images/door_1.png" alt="">
-                                                                </div>
-                                                            </div>
-                                                            <div class="swiper-slide">
-                                                                <div class="card-L">
-                                                                    <img src="images/door_2.png" alt="">
-                                                                </div>
-                                                            </div>
-            
-                                                        </div>
-                                                        <div class="swiper-button-prev"></div>
-                                                        <div class="swiper-button-next"></div>
-                                                        <!-- ページネーション（※省略可） -->
-                                                        <div class="swiper-pagination"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="border-bottom -last"></div>
-            
-                                                <!-- 7.宅配ボックス -->
-                                                <div class="washatendArea card-L">
-                                                    <img src="images/deliveryBox_1.png" alt="宅配ボックス 美観、機能性、安全性。住まいの顔、外構をより美しく、より暮らしやすく。">
-                                                </div>
-                                                <div class="border-bottom -s"></div>
-                                                
-                                                <!-- 8.構造・工法 -->
-                                                <img src="images/meshod.jpg" alt="構造・工法 住まいの根幹である基礎・構造に最新のテクノロジーを取り入れ高耐久・高耐震を標準にした住まいづくり。">
-                                            </div>
-                                        </div>
-            
-                                        <div class="sp">
-                                            <div class="option-contents">
-                                                <!-- 1.システムキッチン -->
-                                                <div class="swiper-title">
-                                                    <img src="images/kitchen_title_s.jpg" alt="システムキッチン 選べる3メーカー">
-                                                </div>
-                                                <div class="swiperArea">
-                                                    <div class="swiper-container card-swiper -sliderItem02">
-                                                        <div class="swiper-wrapper">
-                                                            <!-- Slides -->
-                                                            <div class="swiper-slide">
-                                                                <div class="card-L">
-                                                                    <img src="images/kitchen_3_s.jpg" alt="暮らしの中で輝き続けるキッチン。積み重ねてきた不変のこだわり。">
-                                                                </div>
-                                                            </div>
-                                                            <div class="swiper-slide">
-                                                                <div class="card-L">
-                                                                    <img src="images/kitchen_1_s.jpg" alt="汚れに強く傷みにくい、美しさをいつまでも保つ気持ちのいいキッチン。">
-                                                                </div>
-                                                            </div>
-                                                            <div class="swiper-slide">
-                                                                <div class="card-L">
-                                                                    <img src="images/kitchen_2_s.jpg" alt="シンプルだからこそ使いやすい。料理をつくる時間、家族と過ごす時間を大切にするキッチン。">
-                                                                </div>
-                                                            </div>
-            
-                                                        </div>
-                                                        <div class="swiper-button-prev"></div>
-                                                        <div class="swiper-button-next"></div>
-                                                        <!-- ページネーション（※省略可） -->
-                                                        <div class="swiper-pagination"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="border-bottom"></div>
-            
-                                                <!-- 2.バスルーム -->
-                                                <div class="swiper-title">
-                                                    <img src="images/bathroom_title_s.jpg" alt="バスルーム 選べる2メーカー">
-                                                </div>
-                                                <div class="swiperArea">
-                                                    <div class="swiper-container card-swiper -sliderItem02">
-                                                        <div class="swiper-wrapper">
-                                                            <!-- Slides -->
-                                                            <div class="swiper-slide">
-                                                                <div class="card-L">
-                                                                    <img src="images/bathroom_1_s.jpg" alt="汚れに強く傷みにくい、美しさをいつまでも保つ気持ちのいいキッチン。">
-                                                                </div>
-                                                            </div>
-                                                            <div class="swiper-slide">
-                                                                <div class="card-L">
-                                                                    <img src="images/bathroom_2_s.jpg" alt="シンプルだからこそ使いやすい。料理をつくる時間、家族と過ごす時間を大切にするキッチン。">
-                                                                </div>
-                                                            </div>
-            
-                                                        </div>
-                                                        <div class="swiper-button-prev"></div>
-                                                        <div class="swiper-button-next"></div>
-                                                        <!-- ページネーション（※省略可） -->
-                                                        <div class="swiper-pagination"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="border-bottom"></div>
-            
-                                                <!-- 3.洗面化粧台 -->
-                                                <div class="washatendArea card-L">
-                                                    <img src="images/washstand_1_s.jpg" alt="洗面化粧台 もっと美しく。もっと使いやすく。使う人のための工夫が満載の洗面化粧台。">
-                                                </div>
-                                                <div class="border-bottom"></div>
-            
-                                                <!-- 4.トイレ -->
-                                                <div class="swiper-title" style="margin-bottom:5px;">
-                                                    <img src="images/toilet_title_s.jpg" alt="トイレ 大きな手洗いボウルと新フチなし形状で、より使いやすく清潔なトイレ空間に。">
-                                                </div>
-                                                <div class="swiperArea">
-                                                    <div class="swiper-container card-swiper -sliderItem02">
-                                                        <div class="swiper-wrapper">
-                                                            <!-- Slides -->
-                                                            <div class="swiper-slide">
-                                                                <div class="card-L">
-                                                                    <img src="images/toilet_1_s.jpg" alt="">
-                                                                </div>
-                                                            </div>
-                                                            <div class="swiper-slide">
-                                                                <div class="card-L">
-                                                                    <img src="images/toilet_2_s.jpg" alt="">
-                                                                </div>
-                                                            </div>
-            
-                                                        </div>
-                                                        <div class="swiper-button-prev"></div>
-                                                        <div class="swiper-button-next"></div>
-                                                        <!-- ページネーション（※省略可） -->
-                                                        <div class="swiper-pagination"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="border-bottom"></div>
-            
-                                                <!-- 5.フローリング -->
-                                                <div class="swiper-title" style="margin-bottom: 20px;">
-                                                    <img src="images/flooring_title_s.png" alt="フローリング デザイン性に優れた6種類のラインナップ。キャスターや落下物による傷に強く、床暖房にも対応しています。">
-                                                </div>
-                                                <div class="swiperArea">
-                                                    <div class="swiper-container card-swiper -sliderItem02">
-                                                        <div class="swiper-wrapper">
-                                                            <!-- Slides -->
-                                                            <div class="swiper-slide">
-                                                                <div class="card-L">
-                                                                    <img src="images/flooring_2_s.jpg" alt="">
-                                                                </div>
-                                                            </div>
-                                                            <div class="swiper-slide">
-                                                                <div class="card-L">
-                                                                    <img src="images/flooring_1_s.jpg" alt="">
-                                                                </div>
-                                                            </div>
-            
-                                                        </div>
-                                                        <div class="swiper-button-prev"></div>
-                                                        <div class="swiper-button-next"></div>
-                                                        <!-- ページネーション（※省略可） -->
-                                                        <div class="swiper-pagination"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="border-bottom "></div>
-            
-                                                <!-- 6.耐熱ドア -->
-                                                <div class="swiper-title">
-                                                    <img src="images/door_title_s.jpg" alt="フローリング デザイン性に優れた6種類のラインナップ。キャスターや落下物による傷に強く、床暖房にも対応しています。">
-                                                </div>
-                                                <div class="swiperArea">
-                                                    <div class="swiper-container card-swiper -sliderItem02">
-                                                        <div class="swiper-wrapper">
-                                                            <!-- Slides -->
-                                                            <div class="swiper-slide">
-                                                                <div class="card-L">
-                                                                    <img src="images/door_1_s.jpg" alt="">
-                                                                </div>
-                                                            </div>
-                                                            <div class="swiper-slide">
-                                                                <div class="card-L">
-                                                                    <img src="images/door_2_s.jpg" alt="">
-                                                                </div>
-                                                            </div>
-            
-                                                        </div>
-                                                        <div class="swiper-button-prev"></div>
-                                                        <div class="swiper-button-next"></div>
-                                                        <!-- ページネーション（※省略可） -->
-                                                        <div class="swiper-pagination"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="border-bottom -s"></div>
-            
-                                                <!-- 7.宅配ボックス -->
-                                                <div class="washatendArea card-L">
-                                                    <img src="images/deliveryBox_1_S.png" alt="宅配ボックス 美観、機能性、安全性。住まいの顔、外構をより美しく、より暮らしやすく。">
-                                                </div>
-                                                <div class="border-bottom -s"></div>
-            
-                                                <!-- 8.構造・工法 -->
-                                                <img src="images/meshod_s.jpg" alt="構造・工法 住まいの根幹である基礎・構造に最新のテクノロジーを取り入れ高耐久・高耐震を標準にした住まいづくり。">
-                                            </div>
-                                        </div>
+        <!-- headerは各サイトごとに異なる -->
+        <div class="l-container">
+            <!-- FristView -->
+            <div class="l-contents -textArea w1200 l-mgt_10 l-mgb_20">
+                <div class="l-flex--area">
+                    <div class="l-flex--contents -columnBox">
+                        <div class="flexItem -noPD">
+                            <div class="l-flex--area l-mgb_5">
+                                <div class="l-flex--contents -setsubi-title">
+                                    <div class="flexItem -title -noPD l-mgb_2">
+                                        <img src="images/SVG/setsubi-title.svg" alt="設備・仕様 | EQUIPMENT">
+                                    </div>
+                                    <div class="flexItem -noPD">
+                                    </div>
                                 </div>
                             </div>
-                            <div class="l-btnArea">
-                                <a class="return_btn -border" href="index.html">
-                                    戻る
-                                </a>
+                            <p class="l-text -sizeM -s12 -family01 -left -lh-12">
+                                <img src="images/SVG/setsubi-des.svg"　 style="width: 80%;" alt=" 暮らしを支える設備・仕様。 複数メーカーからお客様に合ったものを選べます。">
+                            </p>
+                        </div>
+                        <div class="pc flexItem l-mgb_2_s -noPD">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 設備内容ここから -->
+            <div class="l-contents -slider w1200 w93-s l-mgb_10 -s_3" style="overflow: inherit;">
+                <div class="l-contens--wrapper">
+                    <div class="option-contents">
+                        <!-- 1.システムキッチン > 完 -->
+                        <div class="swiper-title l-mgb_5 -s_1">
+                            <img class="balloon3 -site-balloon-c" src="images/setsubi/balloon-03-min.png" alt="選べる3メーカー">
+                            <p class="l-text -sizeM -family06 -center -lts-8">KITCHEN</p>
+                            <p class="l-text -sizeLL -family01 -center">システムキッチン</p>
+                        </div>
+                        <div class="swiperArea">
+                            <div class="swiper-container card-swiper -sliderItem01">
+                                <div class="swiper-wrapper l-mgb_5_s">
+                                    <div class="swiper-slide">
+                                        <div class="card-L">
+                                            <p class="l-text -sizeM -family01 -center l-mgb_5">汚れに強く傷みにくい、<br class="sp">美しさをいつまでも保つ気持ちのいいキッチン。</p>
+                                            <img class="pc" src="images/setsubi/kitchen_1_new-min.jpg" alt="">
+                                            <img class="sp" src="images/setsubi/kitchen_1_new_s-min.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card-L">
+                                            <p class="l-text -sizeM -family01 -center l-mgb_5">シンプルだからこそ使いやすい。料理をつくる時間、<br class="sp">家族と過ごす時間を大切にするキッチン。</p>
+                                            <img class="pc" src="images/setsubi/kitchen_2_new-min.jpg" alt="">
+                                            <img class="sp" src="images/setsubi/kitchen_2_new_s-min.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card-L">
+                                            <p class="l-text -sizeM -family01 -center l-mgb_5">暮らしの中で輝き続けるキッチン。<br class="sp">積み重ねてきた不変のこだわり。</p>
+                                            <img class="pc" src="images/setsubi/kitchen_3_new-min.jpg" alt="">
+                                            <img class="sp" src="images/setsubi/kitchen_3_new_s-min.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-pagination"></div>
                             </div>
+                        </div>
+                        <div class="border-bottom"></div>
+
+                        <!-- 2.バスルーム > 完 -->
+                        <div class="swiper-title l-mgb_5 -s_1">
+                            <img class="balloon3 -site-balloon-c" src="images/setsubi/balloon-02-min.png" alt="選べる2メーカー">
+                            <p class="l-text -sizeM -family06 -center -lts-8">BATHROOM</p>
+                            <p class="l-text -sizeLL -family01 -center">バスルーム</p>
+                        </div>
+                        <div class="swiperArea">
+                            <div class="swiper-container card-swiper -sliderItem01">
+                                <div class="swiper-wrapper l-mgb_8_s">
+                                    <div class="swiper-slide">
+                                        <div class="card-L">
+                                            <p class="l-text -sizeM -family01 -center l-mgb_5">足元、浴び心地、ぬくもりにこだわった<br class="sp">最高のくつろぎをお届け。</p>
+                                            <img class="pc" src="images/setsubi/bathroom_1_new-min.jpg" alt="">
+                                            <img class="sp" src="images/setsubi/bathroom_1_new_s-min.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card-L">
+                                            <p class="l-text -sizeM -family01 -center l-mgb_5">いつも自然体でさりげない心地良さ。<br class="sp">ゆったりと浸かって過ごす、くつろぎのバスタイム。</p>
+                                            <img class="pc" src="images/setsubi/bathroom_2_new-min.jpg" alt="">
+                                            <img class="sp" src="images/setsubi/bathroom_2_new_s-min.jpg" alt="">
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                        <div class="border-bottom"></div>
+
+                        <!-- 3.洗面化粧台 > 完  -->
+                        <div class="swiper-title">
+                            <p class="l-text -sizeM -family06 -center -lts-8">WASHSTAND</p>
+                            <p class="l-text -sizeLL -family01 -center l-mgb_3">洗面化粧台</p>
+                            <p class="l-text -sizeM -family01 -center">もっと美しく。もっと使いやすく。使う人のための工夫が満載の洗面化粧台。</p>
+                        </div>
+                        <div class="washatendArea card-L">
+                            <img class="sp" src="images/setsubi/washstand_new_s.jpg" alt="洗面化粧台 もっと美しく。もっと使いやすく。使う人のための工夫が満載の洗面化粧台。">
+                            <img class="pc" src="images/setsubi/washstand_new.jpg" alt="洗面化粧台 もっと美しく。もっと使いやすく。使う人のための工夫が満載の洗面化粧台。">
+                        </div>
+                        <div class="border-bottom"></div>
+
+                        <!-- 4.トイレ > 完 -->
+                        <div class="swiper-title l-mgb_5">
+                            <img class="balloon2 -site-balloon-c" src="images/setsubi/balloon-02-min.png" alt="選べる2メーカー">
+                            <p class="l-text -sizeM -family06 -center -lts-8">TOILET</p>
+                            <p class="l-text -sizeLL -family01 -center l-mgb_3">トイレ</p>
+                        </div>
+                        <div class="swiperArea">
+                            <div class="swiper-container card-swiper -sliderItem01">
+                                <div class="swiper-wrapper l-mgb_8_s">
+                                    <div class="swiper-slide">
+                                        <div class="card-L">
+                                            <p class="l-text -sizeM -family01 -center l-mgb_5">大きな手洗いボウルと新フチなし形状で、<br class="sp">より使いやすく清潔なトイレ空間に。</p>
+                                            <img class="pc" src="images/setsubi/toilet_1_new-min.jpg" alt="">
+                                            <img class="sp" src="images/setsubi/toilet_1_new_s-min.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card-L">
+                                            <p class="l-text -sizeM -family01 -center l-mgb_5">便器も便座もお掃除ラクラク。<br class="sp">キレイが続く一体型シャワートイレ。</p>
+                                            <img class="pc" src="images/setsubi/toilet_2_new-min.jpg" alt="">
+                                            <img class="sp" src="images/setsubi/toilet_2_new_s-min.jpg" alt="">
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                        <div class="border-bottom"></div>
+
+                        <!-- 5.フローリング > 完 -->
+                        <div class="swiper-title l-mgb_5">
+                            <img class="balloon2 -site-balloon-c" src="images/setsubi/balloon-02-min.png" alt="選べる2メーカー">
+                            <p class="l-text -sizeM -family06 -center -lts-8">FLOORING</p>
+                            <p class="l-text -sizeLL -family01 -center l-mgb_3">フローリング</p>
+                            <p class="l-text -sizeM -family01 -center">デザイン性に優れた6種類のラインナップ。<br>キャスターや落下物などによる傷に強く、<br class="sp">床暖房にも対応しています。</p>
+                        </div>
+                        <div class="swiperArea">
+                            <div class="swiper-container card-swiper -sliderItem01">
+                                <div class="swiper-wrapper l-mgb_8_s">
+                                    <div class="swiper-slide">
+                                        <div class="card-L">
+                                            <img class="pc" src="images/setsubi/flooring_1_new-min.jpg" alt="">
+                                            <img class="sp" src="images/setsubi/flooring_1_new_s-min.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card-L">
+                                            <img class="pc" src="images/setsubi/flooring_2_new-min.jpg" alt="">
+                                            <img class="sp" src="images/setsubi/flooring_2_new_s-min.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                        <div class="border-bottom "></div>
+
+                        <!-- 6.耐熱ドア > 完 -->
+                        <div class="swiper-title l-mgb_3">
+                            <img class="balloon2 -site-balloon-c" src="images/setsubi/balloon-02-min.png" alt="選べる2メーカー">
+                            <p class="l-text -sizeM -family06 -center -lts-8" style="text-transform: uppercase;">Insulation Entrance Door</p>
+                            <p class="l-text -sizeLL -family01 -center l-mgb_3">耐熱玄関ドア</p>
+                            <p class="l-text -sizeM -family01 -center">住宅スタイルに合わせて選べるデザイン。<br>基本性能を備え、安心・快適性にも配慮しています。</p>
+                        </div>
+                        <div class="swiperArea">
+                            <div class="swiper-container card-swiper -sliderItem01">
+                                <div class="swiper-wrapper l-mgb_8_s">
+                                    <div class="swiper-slide">
+                                        <div class="card-L">
+                                            <img class="pc l-mgb_3" src="images/setsubi/door_1_new-min.jpg" alt="">
+                                            <img class="sp" src="images/setsubi/door_1_new_s-min.jpg" alt="">
+                                            <p class="l-text -size10 -family01 -left">※各種それぞれのカラーについてはお問い合わせ下さい。</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card-L">
+                                            <img class="pc l-mgb_3" src="images/setsubi/door_2_new-min.jpg" alt="">
+                                            <img class="sp" src="images/setsubi/door_2_new_s-min.jpg" alt="">
+                                            <p class="l-text -size10 -family01 -left">※各種それぞれのカラーについてはお問い合わせ下さい。</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                        <div class="border-bottom"></div>
+
+                        <!-- 7.宅配ボックス > 完 -->
+                        <div class="swiper-title l-mgb_5">
+                            <p class="l-text -sizeM -family06 -center -lts-8" style="text-transform: uppercase;">Delivery Box</p>
+                            <p class="l-text -sizeLL -family01 -center l-mgb_3">宅配ボックス</p>
+                            <p class="l-text -sizeM -family01 -center">選べる2タイプ。<br class="sp">美観、機能性に備わった門柱で外構をより美しく。</p>
+                        </div>
+                        <div class="washatendArea card-L">
+                            <img class="pc" src="images/setsubi/deliveryBox_1_new-min.jpg" alt="">
+                            <img class="sp" src="images/setsubi/deliveryBox_1_new_s-min.jpg" alt="">
+                        </div>
+                        <div class="border-bottom"></div>
+
+                        <!-- 8.構造・工法 -->
+                        <div class="swiper-title l-mgb_10 -s_5">
+                            <p class="l-text -sizeM -family06 -center -lts-8" style="text-transform: uppercase;">structure/method</p>
+                            <p class="l-text -sizeLL -family01 -center l-mgb_3">構造・工法</p>
+                            <p class="l-text -sizeM -family01 -center">住まいの根幹である基礎・構造に<br class="sp">最新のテクノロジーを取り入れ<br class="sp">高耐久・高耐震を標準にした住まいづくり。</p>
+                        </div>
+                        <div class="washatendArea card-L">
+                            <img class="pc" src="images/setsubi/meshod_new-min.jpg" alt="">
+                            <img class="sp" src="images/setsubi/meshod_new_s-min.jpg" alt="">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- 戻るボタン -->
+            <div class="l-contents -btnArea -return l-mgb_10 -s_3">
+                <a class="l-linkImg -p03" href="index.html#content2_2">
+                    <img src="images/btn/return_btn.jpg" alt="トップに戻る">
+                </a>
+            </div>
+            <!-- お気軽にお問い合わせ～～ -->
+            <div class="l-contents -textArea w1050">
+                <h2 class="l-text -sizeLL -site-c -family01 -center l-mgb_1">お気軽にお問い合わせください。</h2>
+                <p class="l-text -sizeM -family01 -center l-mgb_5">
+                    住まい探し･家づくりに関するご相談、現地やモデルハウスの見学、<br class="sp">資料請求など、すべて無料で承っております。
+                </p>
+            </div>
+            <!-- contact*4 -->
+            <div class="l-contents -contactArea -box-type l-mgb_10 -s_5">
+                <div class="l-flex--area">
+                    <div class="l-flex--contents -contact-box">
+                        <div class="flexItem">
+                            <a class="l-linkImg -contact-box -box01" href="https://www.jyu-g.co.jp/contents/inquiry?checkid=712034697">
+                                <img src="images/btn/contact_box_01.png" alt="お問い合わせ">
+                            </a>
+                        </div>
+                        <div class="flexItem">
+                            <a class="l-linkImg -contact-box -box02" href="https://www.jyu-g.co.jp/contents/tour?checkid=712034697">
+                                <img src="images/btn/contact_box_02.png" alt="見学予約">
+                            </a>
+                        </div>
+                        <div class="flexItem">
+                            <a class="l-linkImg -contact-box -box03" href="https://www.jyu-g.co.jp/contents/regist?form_mode=1">
+                                <img src="images/btn/contact_box_03_w.png" alt="会員登録">
+                            </a>
+                        </div>
+                        <div class="flexItem">
+                            <a class="l-linkImg -contact-box -box04" href="https://www.jyu-g.co.jp/contents/kantan">
+                                <img src="images/btn/contact_box_04_w.png" alt="簡単資料請求">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
-    <!-- イベント関係 -->
+    <div class="gaiyo_wrap">
+        <div class="gaiyo_link l-text -sizeM -s10 -family01"><a class="iframe cboxElement" href="https://www.jyu-g.co.jp/contents/detail/712701337"><span class="l-text -sizeL -s10">建築条件付土地</span>物件概要はこちら ＞</a></div>
+    </div>
+
+    <p id="pageTop"><a href="#">ページ<br>TOP</a></p>
+
+
+    <!-- 物件取り扱い店舗情報 -->
+    <!--■■物件ID・電話番号 start■■-->
+    <!-- 支店電話番号
+        入間支店　　　0120-38-6651
+        大泉支店　　　0120-07-6566
+        飯能支店　　　0120-74-5900
+        小手指支店　　0120-29-8815
+        東久留米支店　0120-569-888
+        狭山支店　　　0120-59-3611
+        新所沢支店　　0120-28-7311
+        川越支店　　　0120-38-0041
+        ふじみ野支店　0120-53-2277
+        朝霞台支店　　0120-64-1200
+    -->
+    <footer class="l-footer -iruma">
+        <h2 class="l-footer--title">
+            <img src="images/logo/shop/shop_iruma.png" alt="住協入間支店">
+        </h2>
+        <div class="l-footer--tel">
+            <div class="pc">
+                <img src="images/logo/tel/tel-iruma.png" alt="0120-38-6651">
+            </div>
+            <div class="sp">
+                <a class="" href="tel:0120-38-6651"><img src="images/logo/tel/tel-iruma.png" alt="0120-38-6651"></a>
+            </div>
+        </div>
+    </footer>
+
     <script>
-
-            // スライダー関係
-            $(function(){
-                $(".slider").slick({
-                    autoplay: true,
-                    prevArrow: '<img src="images/btn/prev-arrow.png" class="slide-arrow prev-arrow">',
-                    nextArrow: '<img src="images/btn/next-arrow.png" class="slide-arrow next-arrow">',
-                    slidesToShow: 3,
-                    slidesToScroll: 1,
-                    responsive: [ // ブレイクポイントごとに設定を変更
-                        {
-                            breakpoint: 480,
-                            settings: {
-                                slidesToShow: 1,
-                                slidesToScroll: 1,
-                                cssEase: 'linear', // easing効果を指定
-                                // centerMode: false, //要素を中央寄せ
-                            }
-                        }
-                    ]
-                });
-                $('.slider2').slick({
-                    infinite: true, // 画像遅延読み込み
-                    autoplay: true, // 自動再生
-                    autoplaySpeed: 0, // スライドが動くスピード（ミリ秒）
-                    speed: 10500,
-                    cssEase: 'linear',
-                    arrows: false,
-                    dots: false, // カルーセル下のドット（現在の表示箇所を視覚化）
-                    centerMode: true, //要素を中央寄せ
-                    centerPadding:'0px', //両サイドの見えている部分のサイズ
-                    slidesToShow:7, // 一度に見えているスライドの数
-                    slidesToScroll:1, // スライドが切り替わる際の画像数
-                    responsive: [ // ブレイクポイントごとに設定を変更
-                        {
-                            breakpoint: 1980,
-                            settings: {
-                                slidesToShow: 5,
-                                slidesToScroll: 1
-                            }
-                        },
-                        {
-                            breakpoint: 600,
-                            settings: {
-                                slidesToShow: 2,
-                                slidesToScroll: 1
-                            }
-                        },
-                        {
-                            breakpoint: 480,
-                            settings: {
-                                slidesToShow: 2,
-                                slidesToScroll: 1,
-                                autoplaySpeed: 0,
-                                arrows :false,
-                                speed: 8500, // fade時の切り替えのスピード
-                                cssEase: 'linear', // easing効果を指定
-                                // centerMode: false, //要素を中央寄せ
-                            }
-                        }
-                    ]
-                });
+        // モーダル関係
+        $(function() {
+            $(".iframe").colorbox({
+                iframe:true,
+                width:"80%",
+                height:"90%",
+                opacity: 0.7
             });
-
-
-
-            // システムキッチン用
-            const swiperB = new Swiper('.card-swiper.-sliderItem02', {
-                loop: true,
-                slidesPerView: 1,
-                centeredSlides: true,
-                spaceBetween: 105,
-                autoplay: {
-                    delay: 5000,
-                },
-                pagination: {
-                    el: '.swiper-pagination',
-                    // clickable: true,
-                },
-                navigation: {
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev',
-                },
-            });
-            // ロケーション用
-            const sliderThumbnail  = new Swiper(".thumbnail", {
-                slidesPerView: 6, // サムネイルの枚数
-            });
-            const swiperMain = new Swiper(".main", {
-                loop: true,
-                pagination:{
-                    el:".swiper-pagination",
-                    type:"bullets",
-                    clickable:"true"
-                } ,
-                thumbs: {
-                    swiper: sliderThumbnail,
-                },
-            });
+        });
+        // 設備・仕様
+        const swiperB = new Swiper('.card-swiper.-sliderItem01', {
+            loop: true,
+            dots: true,
+            slidesPerView: 1,
+            centeredSlides: true,
+            spaceBetween: 105,
+            // autoplay: {
+            //     delay: 5000,
+            // },
+            pagination: {
+                el: '.swiper-pagination',
+                // clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
 
     </script>
-
-
-
 </body>
 </html>

@@ -4,10 +4,10 @@
 	&.-img{// 背景画像のみ
 		width: 100%;
 		height: auto;
-					// プランエリア
-					&.-planArea{
-						background: black;
-					}
+		// プランエリア
+		&.-planArea{
+			background: black;
+		}
 	}
 	&.-img-bg{// 背景画像＋コンテンツ
 		position: relative;
@@ -264,6 +264,26 @@
 			}
 		}
 
+	}
+	// 設備・仕様ページの【 戻る 】
+	&.-btnArea{
+		&.-return{
+			a{
+				display: block;
+				width: 20%;
+				border-radius: 5px;
+				overflow: hidden;
+				margin: auto;
+				text-align: center;
+				box-shadow: 1px 1px gray;
+				@include mq(tb){
+					width: 10%;
+				}
+				@include mq(tb-pc1400){
+					width: 6%;
+				}
+			}
+		}
 	}
 }
 
