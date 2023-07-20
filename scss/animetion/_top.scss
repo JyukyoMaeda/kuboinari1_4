@@ -1,0 +1,63 @@
+
+@keyframes topContents-pic-animation {
+    0%{
+        opacity: 0;
+    }
+    30%{
+        filter: drop-shadow(8px 7px 1px $main-color--textShadow-start);
+        opacity: 0;
+
+    }
+    100%{
+        filter: drop-shadow(8px 7px 1px $main-color--textShadow-end);
+        animation-play-state: paused;
+        opacity: 1;
+    }
+}
+
+@keyframes topContents-text-animation {
+    0%{
+        opacity: 0;
+    }
+    30%{
+        filter: drop-shadow(8px 7px 1px $main-color--textShadow-start);
+        opacity: 0;
+
+    }
+    100%{
+        filter: drop-shadow(8px 7px 1px $main-color--textShadow-end);
+        animation-play-state: paused;
+        opacity: 1;
+    }
+}
+
+
+@keyframes topContents-pic-animation-sp {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        filter: drop-shadow(8px 7px 1px $main-color--textShadow-start);
+        opacity: 0;
+    }
+    100%{
+        filter: drop-shadow(8px 7px 1px $main-color--textShadow-end);
+        animation-play-state: paused;
+        opacity: 1;
+    }
+}
+
+@keyframes topContents-text-animation-sp {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        filter: drop-shadow(8px 7px 1px $main-color--textShadow-start);
+        opacity: 0;
+    }
+    100%{
+        filter: drop-shadow(8px 7px 1px $main-color--textShadow-end);
+        animation-play-state: paused;
+        opacity: 1;
+    }
+}

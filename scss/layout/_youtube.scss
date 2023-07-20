@@ -1,0 +1,24 @@
+.l-contents{
+    &.-youtubeArea{
+        padding: 3vh 0 6vh;
+        margin: auto;
+        text-align: center;
+        width: 85%;
+        @include mq(tb){
+            width: 65%;
+            padding: 5vh 0 9vh;
+        }
+        @include mq(pc){
+            width: 50%;
+            padding: 3vh 0 23vh;
+        }
+        .youtubeArea-wrapper{
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            iframe {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}

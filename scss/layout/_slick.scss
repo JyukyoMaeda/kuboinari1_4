@@ -1,0 +1,138 @@
+
+.l-slider {
+    margin: 30px 0 auto auto;
+    width: 100%;
+
+    @include mq(tb){
+        margin: 60px 0 auto auto;
+        width: 83%;
+    }
+    @include mq(pc){
+        margin: 145px 0 auto auto;
+    }
+    .l-slickImg {
+        margin: 0 10px 10px;
+        text-align: end;
+        .inline{
+            width: 82%;
+            height: auto;
+            margin: auto;
+            @include mq(tb){
+                width: 98%;
+                height: auto;
+            }
+        }
+        a{
+            display: block;
+            color: $border-color--b;
+            // background: $main-color--w;
+            font-weight: bold;
+            img,
+            .l-slickText{
+                transition: .5s all;
+                @include mq(sp){
+                    color: $pink-t;
+                }
+                &::after{
+                    @include mq(sp){
+                        background: $pink-t;
+                    }
+                }
+            }
+            &:hover{
+                color: $pink-t;
+                img{
+                    opacity: 0.7;
+                }
+                .l-slickText{
+                    &::after{
+                        background: $pink-t;
+                    }
+                }
+            }
+            .l-slickText{
+                position: relative;
+                display: inline-block;
+                &::after{
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+
+                    content: "";
+                    width: 100%;
+                    height: 1.5px;
+                    transition: .5s all;
+                }
+            }
+        }
+    }
+}
+
+
+
+    .slide-arrow {
+    width: 8vw;
+    background: $main-color--w;
+    border-radius: 50%;
+    transition: .8s all;
+    z-index: 9999;
+    @include mq(tb){
+        width: 3vw;
+        max-width: 80px;
+    }
+    @include mq(pc){
+        width: 2.5vw;
+        max-width: 80px;
+    }
+    &:hover{
+        background: $item-hover--bg;
+    }
+    }
+    .prev-arrow {
+        position: absolute;
+        
+        top: -0.5%;
+        right: 15%;
+        @include mq(tb){
+            top: -16%;
+            right: 55.5%;
+        }
+        &:hover{
+            
+        }
+    }
+    .next-arrow {
+        position: absolute;
+        top: -0.5%;
+        right: 5%;
+        @include mq(tb){
+            top: -16%;
+            right: 51%;
+        }
+    }
+
+
+.slick-dots{
+    bottom: -8.5% !important;
+    @include mq(tb){
+        bottom: -11% !important;
+        left: 39% !important;
+        transform: translateX(-50%);
+    }
+}
+    .slick-dots li {
+        transform: scale(1.2);
+        @include mq(tb){
+            transform: scale(1.5);
+        }
+    }
+    .slick-dots li.slick-active button:before {
+        opacity: 0.75;
+        color: white !important;
+    }
+    .slick-dots li button:before {
+
+    }
+    .slick-dots li.slick-active button:before{
+        // background: #F2C802;
+    }
