@@ -18,33 +18,132 @@
 		.l-contentsBox{// コンテンツ要素
 			width: auto;
 			position: absolute;
-
-			// 設備ボタンエリア
-			&.-setsubiArea{
-				bottom: 56%;
-    			left: 55%;
+			&.-header-contact{
+				top: 25%;
+				right: 5%;
 				transform: translateY(-50%);
+				width: 56%;
 				@include mq(tb){
-					top: 51%;
-					bottom: auto;
-					left: 74.6%;
-					transform: translate(-50%, -50%);
+					top: 50%;
+					right: 2%;
+					transform: translateY(-50%);
+					width: 23%;
 				}
-				img{
-					width: 35vw;
-					@include mq(tb){
-						width: 12vw;
-					}
+				@include mq(tb-pc1600){
+					right: 3%;
+					width: 20%;
 				}
 			}
-			&.-owners-voice{
-				top: 70%;
+			//サイト右側中段に表示 （PCのみ）
+			&.-right-topBtn{
+				top: 2.5%;
+				left: 50%;
+				transform: translateX(-50%);
+				width: 100%;
+				a{
+					display: block;
+					padding: 8% 23%;
+				}
+			}
+			// サイト下部に表示（SPのみ）
+			&.-right-btmBtn{
+				top: 52.5%;
+				left: 50%;
+				transform: translateX(-50%);
+				width: 100%;
+				a{
+					display: block;
+					padding: 8% 23%;
+				}
+			}
+			//サイト下部に表示 （SPのみ）
+			&.-bottom-rightBtn{
+				@include mq(sp){
+					top: 0%;
+					left: 76%;
+					transform: translateX(-50%);
+					width: 50%;
+				}
+				@include mq(tb){
+					top: 0%;
+					left: 75%;
+					transform: translateX(-50%);
+					width: 50%;
+				}
+
+				a{
+					display: block;
+				}
+			}
+			// サイト下部に表示（SPのみ）
+			&.-bottom-leftBtn{
+				@include mq(sp){
+					top: 0%;
+					left: 25%;
+					transform: translateX(-50%);
+					width: 50%;
+				}
+				@include mq(tb){
+					top: 0%;
+					left: 25%;
+					transform: translateX(-50%);
+					width: 50%;
+				}
+				a{
+					display: block;
+				}
+			}
+
+			// logo
+			&.-site-logo{
+				@include mq(tb){
+					top: 2%;
+					left: 5.5%;
+					width: 12%;
+				}
+			}
+			// 設備ボタン
+			&.-setsubi-btn{
+				top: 43.5%;
+				left: 4.74%;
+				width: 41.5%;
+				@include mq(tb){
+				    top: 78.28%;
+    				left: 66%;
+					width: 15%;
+				}
+			}
+			&.-kukaku-madori{
+				top: 71%;
+				left: 50%;
+				transform: translateX(-50%);
+				width: 80%;
+			}
+			&.-kukaku-arrow{
+				top: 84%;
+				left: 50%;
+				transform: translateX(-50%);
+				width: 20%;
+			}
+			&.-kukaku-house{
+				top: 88%;
+				left: 50%;
+				transform: translateX(-50%);
+				width: 93%;
+			}
+			// オーナー
+			&.-owners-slider{
+				top: 55%;
 				left: 50%;
 				transform: translate(-50%, -50%);
 				width: 100%;
-				height: 100%;
+				@include mq(sp){
+					.slick-dots{
+						bottom: -25px;
+					}
+				}
 				@include mq(tb){
-					top: 64%;
+					top: 60%;
 				}
 			}
 
@@ -173,14 +272,14 @@
 			}
 
 			// ロケーション
-			&.-location-tabArea{
+			&.-tabArea{
 				width: 90%;
-				top: 59%;
+				top: 75%;
 				left: 50%;
 				transform: translate(-50%, -50%);
 				@include mq(tb){
 					width: 65%;
-					top: 65%;
+					top: 72%;
 					left: 50%;
 					transform: translate(-50%, -50%);
 				}
@@ -189,18 +288,29 @@
 			&.-access-sliderArea{
 				position: absolute;
 				top: 23%;
-				right: 0;
-
-				width: 95%;
-				@include mq(tb){
-					width: 82.5%;
-					top: 8.25%;
+				width: 100%;
+				text-align: center;
+				@include mq(sp){
+					top: 67%;
+					width: 91%;
+					left: 50%;
+					transform: translateX(-50%);
 				}
+				@include mq(tb){
+					top: 50.25%;
+					right: 0;
+				}
+			}
+			// 子育て支援
+			&.-text-link{
+				left: 50%;
+				bottom: 0;
+				transform: translateX(-50%);
 			}
 		}
 	}
 	&.-contactArea{
-		margin: 5vw auto 8vw;
+		margin: 0vw auto 0vw;
 		@include mq(tb){
 			margin: 5vw auto 5vw;
 		}

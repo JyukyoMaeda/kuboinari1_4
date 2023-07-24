@@ -41,7 +41,9 @@
             &:hover{
                 transform: scale(.95);
                 transition-duration: 0.2s;
-                // box-shadow: 1px 1px 4px 0px $item-hover--bg;
+                img{
+                    opacity: 1 !important;
+                }
             }
         }
     }

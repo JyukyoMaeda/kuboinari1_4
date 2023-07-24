@@ -5,8 +5,12 @@
     @include mq(sp){
         text-align: center;
     }
+    @include mq(tb){
+
+    }
     // アイコンを消す
-    input[name="tab-item"] {
+    input[name="tab-item"],
+    input[name="tab-item02"]  {
         display: none;
     }
     // タブ > メニュー
@@ -21,7 +25,7 @@
         text-align: center;
         transition: all .3s ease;
         @include mq(sp){
-            margin: 0 10px 10px;
+            margin: 0 10px 5px;
             &::after{
                 content: "";
                 width: 1px;
@@ -42,27 +46,40 @@
             font-size: 1vw;
             text-align: left;
             line-height: 1.5;
-            // &:nth-child(2){
-            //     width: 7%;
-            // }
-            // &:nth-child(4){
-            //     width: 10%;
-            // }
-            // &:nth-child(6){
-            //     width: 7%;
-            // }
-            // &:nth-child(8){
-            //     width: 7%;
-            // }
-            // &:nth-child(10){
-            //     width: 3.4%;
-            // }
-            // &:nth-child(12){
-            //     width: 13%;
-            // }
-            // &:nth-child(14){
-            //     width: 5%;
-            // }
+        }
+        &.-last{
+            margin: 0 5px;
+        }
+        &:hover{
+            // border-bottom: 1px solid $tabText-hover;
+        }
+
+    }
+    .tab-item02{
+        position: relative;
+        display: inline;
+        width: auto;
+        padding: .1% .8%;
+        margin: 0 5px 10px;
+        font-size: 12px;
+        line-height: 2;
+        color: white;
+        background: rgb(224, 224, 224);
+        border: 1px solid initial;
+        border-radius: 10px;
+        text-align: center;
+        transition: all .3s ease;
+        @include mq(sp){
+            padding: .1% 1.5%;
+            margin: 0 10px 5px;
+        }
+        @include mq(tb){
+            width: 13%;
+            height: 5%;
+            margin: 0 1% 1.2% 1%;
+            font-size: 1vw;
+            text-align: left;
+            line-height: 1.5;
         }
         &.-last{
             margin: 0 5px;
@@ -94,7 +111,27 @@
             }
         }
     }
+    .tab-content02 {
+        display: none;
+        clear: both;
+        overflow: hidden;
+        z-index: 10;
+        @include mq(sp){
+            margin-top: -105%;
+        }
+        @include mq(tb){
+            float: right;
+            width: 83.5%;
+            margin-top: -30%;
 
+        }
+        .tab-content-img{
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
 
 
 
@@ -106,12 +143,26 @@
     #location4:checked ~ #location4-content,
     #location5:checked ~ #location5-content,
     #location6:checked ~ #location6-content,
-    #location7:checked ~ #location7-content{
+    #location7:checked ~ #location7-content,
+    
+    #access1:checked ~ #access1-content,
+    #access2:checked ~ #access2-content
+    {
         display: block !important;
         animation: fadein 1s forwards;
     }
     input:checked + .tab-item {
         color: $tabText-active;
+        font-weight: bold;
+        transform: scale(1.05);
+        transition: all .3s ease;
+    }
+    input:checked + .tab-item02 {
+        color: $tabText;
+        background: rgb(197, 197, 197);
+        border: 1px solid gray;
+        border-radius: 30px;
+        padding: .1% 2%;
         font-weight: bold;
         transform: scale(1.05);
         transition: all .3s ease;

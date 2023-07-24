@@ -1,3 +1,4 @@
+
 .letter{
 	&-s01{
 		letter-spacing: -11px
@@ -69,7 +70,22 @@ img{
 
 
 
-
+.w1350{
+	width: 94% !important;
+	max-width: 1350px;
+	margin: auto;
+	&.-s100{
+		width: 100% !important;
+	}
+}
+.w1280{
+	width: 94% !important;
+	max-width: 1280px;
+	margin: auto;
+	&.-s100{
+		width: 100% !important;
+	}
+}
 .w1200{
 	width: 95% !important;
 	max-width: 1200px;

@@ -98,3 +98,20 @@
 .slick-arrow.slick-hidden {
     display: none;
 }
+
+
+// オリジナル
+.slick-prev{
+    @include mq(sp){
+        left: -2% !important;
+        filter: drop-shadow(2px 4px 3px white);
+        transform: scale(.7);
+    }
+}
+.slick-next{
+    @include mq(sp){
+        right: -2% !important;
+        filter: drop-shadow(2px 4px 3px white);
+        transform: scale(.7);
+    }
+}
