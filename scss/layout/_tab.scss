@@ -23,6 +23,7 @@
         line-height: 2;
         color: $tabText;
         text-align: center;
+        cursor:pointer;
         transition: all .3s ease;
         @include mq(sp){
             margin: 0 10px 5px;
@@ -68,6 +69,7 @@
         border: 1px solid initial;
         border-radius: 10px;
         text-align: center;
+        cursor:pointer;
         transition: all .3s ease;
         @include mq(sp){
             padding: .1% 1.5%;

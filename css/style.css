@@ -2011,6 +2011,7 @@ img {
   line-height: 2;
   color: #333333;
   text-align: center;
+  cursor: pointer;
   transition: all 0.3s ease;
 }
 @media screen and (max-width: 768px) {
@@ -2055,6 +2056,7 @@ img {
   border: 1px solid initial;
   border-radius: 10px;
   text-align: center;
+  cursor: pointer;
   transition: all 0.3s ease;
 }
 @media screen and (max-width: 768px) {
@@ -2902,6 +2904,7 @@ svg#bottomBtn_right .cls-2 {
   line-height: 2;
   color: #333333;
   text-align: center;
+  cursor: pointer;
   transition: all 0.3s ease;
 }
 @media screen and (max-width: 768px) {
@@ -2946,6 +2949,7 @@ svg#bottomBtn_right .cls-2 {
   border: 1px solid initial;
   border-radius: 10px;
   text-align: center;
+  cursor: pointer;
   transition: all 0.3s ease;
 }
 @media screen and (max-width: 768px) {
@@ -5476,4 +5480,13 @@ header {
 }
 #p-setsubi .border-bottom.-last {
   margin: 0 auto;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }/*# sourceMappingURL=style.css.map */
